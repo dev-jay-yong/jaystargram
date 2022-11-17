@@ -14,44 +14,13 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  {% load sass_tags %}
+  <link href="{% sass_src 'scss/styles.scss' %}" rel="stylesheet" type="text/css" />
+<!--  <link href="static/scss/styles.scss" rel="stylesheet" type="text/css" />-->
+
   <style>
-    .feed-container {
-      margin-right: 100px;
-      gap: 15px;
-      width: 500px;
-      height: 2000px;
-      display: flex;
-      flex-direction: column;
-    }
 
-    .feed-like-area {
-      padding: 0px 10px;
-    }
 
-    .feed-reply-area {
-      padding: 0px 10px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .feed-img{
-      width: 100%;
-      object-fit: contain;
-    }
-
-    .feed-text-area {
-      padding-left: 10px;
-    }
-
-    .feed-text{
-      font-size: 14px;
-    }
-
-    .feed-icon-area {
-      padding: 5px 5px 0px 5px;
-      display: flex;
-      justify-content: space-between;
-    }
 
     .feed-header-area {
       padding: 10px;
