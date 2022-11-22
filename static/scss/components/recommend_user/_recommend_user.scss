@@ -1,0 +1,53 @@
+.recommend-user-container {
+    padding-top: 20px;
+    width: 300px;
+    height: 1000px;
+    left: 72%;
+    position: fixed;
+
+  .big-profile-image-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    overflow: hidden;
+  }
+
+  .link_txt{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+  .name_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommend-title-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .recommend-user-area {
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .gray_text {
+    font-size: 12px;
+    padding: 0px 10px;
+    font-weight: bold;
+    color: lightgray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 190px;
+  }
+}

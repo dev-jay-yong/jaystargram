@@ -17,157 +17,6 @@
   {% load sass_tags %}
   <link href="{% sass_src 'scss/styles.scss' %}" rel="stylesheet" type="text/css" />
 <!--  <link href="static/scss/styles.scss" rel="stylesheet" type="text/css" />-->
-
-  <style>
-
-
-
-    .feed-header-area {
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    span{
-      padding-right: 5px;
-    }
-
-    .recommend-user-container {
-      padding-top: 20px;
-      width: 300px;
-      height: 1000px;
-      left: 72%;
-      position: fixed
-    }
-
-    .big-profile-image-wrapper {
-      width: 60px;
-      height: 60px;
-      border-radius: 70%;
-      overflow: hidden;
-    }
-
-    .profile-image-wrapper {
-      width: 40px;
-      height: 40px;
-      border-radius: 70%;
-      overflow: hidden;
-    }
-
-    .profile-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .feed-username-text {
-      font-size: 14px;
-      padding: 0px 10px;
-      font-weight: bold;
-    }
-
-    .feed-user-area {
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .modal_overlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(1.5px);
-      -webkit-backdrop-filter: blur(1.5px);
-    }
-
-    .modal_window {
-      background: white;
-      backdrop-filter: blur(13.5px);
-      -webkit-backdrop-filter: blur(13.5px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      width: 800px;
-      height: 600px;
-      position: relative;
-      padding: 10px;
-    }
-
-    .gray_text {
-      font-size: 12px;
-      padding: 0px 10px;
-      font-weight: bold;
-      color: lightgray;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 190px;
-    }
-
-   .link_txt{
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .name_content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .recommend-title-area {
-      display: flex;
-      justify-content: space-between;
-      padding: 5px;
-      font-size: 14px;
-      font-weight: bold;
-      align-items: center;
-    }
-
-    .recommend-user-area {
-      justify-content: space-between;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .modal_title {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .modal_title_side {
-      flex: 0 0 40px;
-      text-align: center;
-    }
-
-    .main-body {
-      display: flex;
-      justify-content: center;
-      padding-top: 50px;
-      background-color: #FAFAFA;
-    }
-
-    .modal_image_upload{
-        outline: 2px dashed black ;
-        outline-offset:-10px;
-        text-align: center;
-        transition: all .15s ease-in-out;
-        width:780px;
-        height: 548px;
-    }
-
-  </style>
   <title>jaystargram</title>
 </head>
 <body>
@@ -351,7 +200,7 @@
     const modal = document.getElementById("upload-modal-container");
     const buttonAddFeed = document.getElementById("add_feed");
     buttonAddFeed.addEventListener("click", e => {
-        modal.style.display = "flex";
+        modal.classList.add('hidden');
         modal.style.top = window.pageYOffset + 'px';
         document.body.style.overflowY = "hidden";
     });
@@ -359,7 +208,7 @@
      // 모달 닫기 코드
     const buttonCloseModal = document.getElementById("close_modal");
     buttonCloseModal.addEventListener("click", e => {
-        modal.style.display = "none";
+        modal.classList.remove('hidden');
         document.body.style.overflowY = "visible";
     });
 

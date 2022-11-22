@@ -1,3 +1,59 @@
+.main-body { display: flex; justify-content: center; padding-top: 50px; background-color: #FAFAFA; }
+
+.main-body .span { padding-right: 5px; }
+
 .feed-container { margin-right: 100px; gap: 15px; width: 500px; height: 2000px; display: flex; flex-direction: column; }
+
+.feed-image { width: 100%; object-fit: contain; }
+
+.feed-like-area { padding: 0px 10px; }
+
+.feed-reply-area { padding: 0px 10px; display: flex; flex-direction: column; }
+
+.feed-img { width: 100%; object-fit: contain; }
+
+.feed-text-area { padding-left: 10px; }
+
+.feed-text { font-size: 14px; }
+
+.feed-icon-area { padding: 5px 5px 0px 5px; display: flex; justify-content: space-between; }
+
+.feed-header-area { padding: 10px; display: flex; align-items: center; }
+
+.modal_overlay { width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: none; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(1.5px); -webkit-backdrop-filter: blur(1.5px); }
+
+.modal_overlay .modal_window { background: white; backdrop-filter: blur(13.5px); -webkit-backdrop-filter: blur(13.5px); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); width: 800px; height: 600px; position: relative; padding: 10px; }
+
+.modal_overlay .modal_title { display: flex; flex-direction: row; justify-content: space-between; font-weight: bold; font-size: 20px; }
+
+.modal_overlay .modal_title_side { flex: 0 0 40px; text-align: center; }
+
+.modal_overlay .modal_image_upload { outline: 2px dashed black; outline-offset: -10px; text-align: center; transition: all .15s ease-in-out; width: 780px; height: 548px; }
+
+.recommend-user-container { padding-top: 20px; width: 300px; height: 1000px; left: 72%; position: fixed; }
+
+.recommend-user-container .big-profile-image-wrapper { width: 60px; height: 60px; border-radius: 70%; overflow: hidden; }
+
+.recommend-user-container .link_txt { font-size: 14px; font-weight: bold; cursor: pointer; text-decoration: none; }
+
+.recommend-user-container .name_content { display: flex; flex-direction: column; }
+
+.recommend-user-container .recommend-title-area { display: flex; justify-content: space-between; padding: 5px; font-size: 14px; font-weight: bold; align-items: center; }
+
+.recommend-user-container .recommend-user-area { justify-content: space-between; padding: 10px; display: flex; align-items: center; }
+
+.recommend-user-container .gray_text { font-size: 12px; padding: 0px 10px; font-weight: bold; color: lightgray; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 190px; }
+
+.profile-image-wrapper { width: 40px; height: 40px; border-radius: 70%; overflow: hidden; }
+
+.profile-img { width: 100%; height: 100%; object-fit: cover; }
+
+.feed-username-text { font-size: 14px; padding: 0px 10px; font-weight: bold; }
+
+.feed-username-text { font-size: 14px; padding: 0px 10px; font-weight: bold; }
+
+.feed-user-area { padding: 10px; display: flex; align-items: center; }
+
+.hidden, [hidden] { display: none !important; }
 
 /*# sourceMappingURL=styles.css.map */

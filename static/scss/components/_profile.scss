@@ -1,0 +1,30 @@
+.profile-image-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feed-username-text {
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+.feed-username-text {
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+.feed-user-area {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
